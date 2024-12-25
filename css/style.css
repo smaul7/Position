@@ -28,6 +28,16 @@ margin: 0 auto;
 }
 
     /* position */
+.previusprice{
+    position: absolute;
+    left: 88px;
+    bottom: -1px;
+    color: #A5A5A5;
+    text-decoration: line-through;
+    font-size: 18px;
+    line-height: 16px;
+}
+   
 .basket{
     position: relative;
 }
