@@ -20,16 +20,33 @@
     color: #3D3D3D;
 }
 
-.wraper{
-max-width: 1232px;
+.wrapper{
+max-width: 1220px;
 min-width: 991px;
+padding: 0 10px;
 margin: 0 auto;
 }
 
     /* position */
+.basket{
+    position: relative;
+}
+
+.basket-number{
+    position: absolute;
+    background-color: #46A358;
+    color: white;
+    padding: 2px 2px;
+    font-size: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    top: -3px;
+    right: -7px;
+}
+
 .sale-box{
     position: absolute;
-    left: 0;
+    left: 10px;
     top: 14px;
     padding: 9px 9px;
     background-color: #46A358;
@@ -39,10 +56,9 @@ margin: 0 auto;
 
 .box{
     position: relative;
-    border-top: 1px solid #FBFBFB;
 }
 
-.box:hover{
+.box:hover .background{
     border-top: 1px solid #46A358;
 }
 
@@ -81,7 +97,7 @@ margin: 0 auto;
 
             /* inline-block */
 
-.header {
+.header-nav {
     height: 53px;
     margin-top: 30px;
     border-bottom: 1px solid rgb(70, 164, 89, 0.5);
@@ -96,20 +112,17 @@ margin: 0 auto;
 
 .navbar{
     display: flex;
-    justify-content: space-between;
-    width: 349px;
 }
 
 
 .icons{
     display: flex;
-    justify-content: space-between;
-    width: 209px;
     align-items: center;
 }
 
 .basket{
-    padding-right: 5px;
+    margin-right: 35px;
+    margin-left: 30px;
 }
 
 .login{
@@ -118,7 +131,6 @@ margin: 0 auto;
     padding: 7px 17px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     border-radius: 6px;
     vertical-align: top;
     display: inline-flex;
@@ -128,21 +140,27 @@ margin: 0 auto;
     text-decoration: none;
     color: #3D3D3D;
     font-size: 16px;
-    margin-top: 7px;
+    padding-top: 7px;
+    padding-bottom: 26px;
+    margin-left: 26px;
+    margin-right: 26px;
+    border-bottom: 3px solid transparent;
+
 }
 
 .navigation:hover{
     color: #46A358;
+    border-bottom: 3px solid #46A358;
 }
 
-.main{
+.header-main{
     margin-top: 12px;
     background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-between;
 }
 
 .welcome{
-    display: inline-block;
-    vertical-align: top;
     width: 55%;
     padding-left: 43px;
     padding-top: 68px;
@@ -174,11 +192,7 @@ margin: 0 auto;
     margin-bottom: 44px;
 }
 
-.picture{
-    display: inline-block;
-    vertical-align: top;
-    width: 40%;
-}
+
 
 .shop{
     background-color: #46A358;
@@ -195,49 +209,50 @@ margin: 0 auto;
 }
 
             /* float */
-
 .main-items{
     display: flex;
-    justify-content: space-between;
     padding-top: 46px;
+    margin: 0 -10px;
 }
 
 .categories{
     width: 25%;
-    background-color: #FBFBFB;
-    padding-left: 18px;
-    padding-top: 14px;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
-.list{
+.categories-background{
+    background-color: #F5F5F5;
+}
+
+.list-items a{
     display: flex;
     justify-content: space-between;
+    text-decoration: none;
+    color: #3D3D3D;
 }
 
 .list-items{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     padding-left: 30px;
     padding-right: 21px;
     line-height: 40px;
     font-size: 15px;
 }
 
-.list li:hover{
+.list a:hover{
     color: #46A358;
 }
 
 .saleimg{
-    margin-left: -15px;
     padding-top: 377px;
+    max-width: 100%;
 }
 
 .listname{
     font-weight: bold;
     font-size: 18px;
     line-height: 16px;
+    padding-top: 14px;
     padding-left: 18px;
     margin-bottom: 7px;
 }
@@ -249,53 +264,61 @@ margin: 0 auto;
     line-height: 16px;
     display: flex;
     justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 0 -10px;
 }
 
 .nav-items-elem{
     display: flex;
     justify-content: space-between;
     width: 33%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0 10px;
 }
 
 .elem{
     text-decoration: none;
     color: #3D3D3D;
-    padding-right: 0;
 }
 
 .elem:hover{
     color: #46A358;
 }
 
+.sortby{
+    padding: 0 10px;
+    display: inline-flex;
+}
+
+.sorting{
+    padding: 0 15px;
+}
+
 .goods{
     padding-top: 38px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-left: -0;
-    margin-right: -0;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .items{
     width: 75%;
+    margin: 0 10px;
 }
 
 .background{
-    width: 100%;
     height: 300px;
     background-color: #FBFBFB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #FBFBFB;
 }
 
 .box{
     width: 33.333%;
-    height: 350px;
     margin-bottom: 70px;
-    padding-left: 7px;
-    padding-right: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .price{
@@ -312,9 +335,8 @@ margin: 0 auto;
     margin-top: 12px;
 }
 
-.img{
-    display: block;
-    margin: auto;
+.goods-img{
+    max-width: 100%;
 }
 
 .crouch{
@@ -365,20 +387,25 @@ margin: 0 auto;
     display: inline-flex;
 }
 
-.second-main{
+.bigcards{
     display: flex;
     justify-content: space-between;
+    margin: 0 -10px;
 }
 
 .bigcard{
-    background-image: linear-gradient( white 18%, #FBFBFB 18%);
-    width: 556px;
-    height: 297px;
-    padding-right: 30px;
+    width: 50%;
+    padding: 0 10px;
     text-align: end;
 }
 
+.bigcard-background{
+    background-image: linear-gradient(white 18%, #f5f5f5 18%);
+    height: 297px;
+}
+
 .imgmain{
+    max-width: 100%;
     float: left;
 }
 
@@ -411,15 +438,25 @@ p.info{
     padding-top: 15px;
 }
 
-.footer{
+.cards{
     display: flex;
-    justify-content: space-between;
+    margin: 0 -10px;
+    
 }
 
 .smallcard{
-    width: 253px;
-    background-color: #FBFBFB;
-    padding-left: 15px;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.smallcard-background{
+    background-color: #F5F5F5;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .date{
@@ -427,23 +464,27 @@ p.info{
     font-size: 14px;
     margin-top: 9px;
     margin-bottom: 4px;
+    padding-left: 15px;
 }
 
 h2.info-smallcard{
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 4px;
+    padding-left: 15px;
 }
 
 p.info-smallcard{
     font-size: 14px;
     margin-bottom: 9px;
+    padding-left: 15px;
 }
 
 .readmore{
     font-size: 14px;
     text-decoration: none;
     color: #3D3D3D;
+    padding-left: 15px;
 }
 
 .readmore:hover{
@@ -451,5 +492,6 @@ p.info-smallcard{
 }
 
 .imgfooter{
-    margin-left: -15px;
+    width: 285px;
+    max-width: 100%;
 }
